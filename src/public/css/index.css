@@ -1,0 +1,152 @@
+@import url("./reset.css");
+
+body {
+  padding: 25px;
+  background: #2f3640;
+}
+
+h1 {
+  color: #fbc531;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 20px;
+  background: rgba(33, 33, 33, 0.65);
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+/* Welcome */
+.input-css {
+  margin-top: 15px;
+  background: white;
+  color: #111;
+  font-weight: 600;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 3px;
+  transition: 0.2s ease-in-out;
+}
+
+.input-css:hover {
+  background: whitesmoke;
+}
+
+.input-css:focus {
+  background: whitesmoke;
+}
+
+button {
+  background: rgba(0, 0, 0, 0.25);
+  color: whitesmoke;
+  padding: 10px 12px;
+  border-radius: 3px;
+  margin-left: 10px;
+  font-weight: 600;
+  transition: 0.2s ease-in-out;
+  border: none;
+}
+
+/* Video */
+.my-video {
+  background: #111;
+  border-radius: 5px;
+  position: relative;
+}
+
+.peer-video {
+  background: #111;
+  border-radius: 5px;
+  position: relative;
+}
+
+.video-img {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+}
+
+/* Toggle Btn */
+.mute-btn,
+.camera-btn,
+.change-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 20px;
+  width: 20px;
+  height: 20px;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fbc531;
+  border-radius: 3px;
+  margin: 1px 5px 0px 0px;
+  transition: 0.2s ease-in-out;
+}
+
+.mute-btn:hover,
+.camera-btn:hover,
+.change-btn:hover {
+  background: black;
+  color: hsl(44, 100%, 50%);
+}
+
+.microphone-slash,
+.microphone-non-slash,
+.cam-non-slash,
+.cam-slash {
+  display: none;
+}
+
+.displayToggle {
+  display: block;
+}
+
+.btn-box {
+  display: flex;
+}
+
+/* Cam Change */
+.mic-select {
+  background: rgba(0, 0, 0, 0.2);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: #fbc531;
+  font-size: 12px;
+  margin-top: 5px;
+  transition: 0.2s ease-in-out;
+}
+
+.mic-select:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.mic-select option {
+  background: #262b33;
+  border: none;
+  transition: 0.2s ease-in-out;
+}
+
+.mic-box {
+  margin-bottom: 10px;
+}
+/* fade-in */
+.fade-in,
+.btn-box,
+.video-box {
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  12% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
